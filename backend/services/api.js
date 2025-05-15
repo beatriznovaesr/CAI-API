@@ -1,9 +1,8 @@
 const BASE_URL = 'https://countries-api-abhishek.vercel.app/countries';
 
-// api/api.js
 async function getDados() {
     try {
-        const fetch = (await import('node-fetch')).default; // importação dinâmica
+        const fetch = (await import('node-fetch')).default; 
         const resposta = await fetch(BASE_URL);
 
         if (!resposta.ok) {
