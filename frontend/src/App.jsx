@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import Paises from "./page";
-import Detalhes from "./details"
+import Paises from "./pages/page";
+import Detalhes from "./pages/details"
 
 function App() {
     return (
