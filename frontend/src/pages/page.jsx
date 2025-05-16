@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Paises() {
     const [paises, setPaises] = useState([])
-    const [cursoSelecionado, setCursoSelecionado] = useState(null)
+    
 
     useEffect(() => {
         fetch("http://localhost:3000/countries")
@@ -19,6 +19,8 @@ function Paises() {
             })
 
     }, [])
+    
+    if (!paises) return <div className="text-center p-4">Loading...</div>;
 
 
     return (
